@@ -21,24 +21,24 @@
 
         <section id="główny2">
             <h2>Kontakt</h2>
-            <form>
+            <form action="form.php" method="post">
             <table style="text-align:center">
                 <tr>
                     <td><p for="imie">Imię</p></td>
-                    <td><input type="text" id="imie" placeholder="wprowadź imię" value=""></td>
+                    <td><input type="text" name="imie" id="imie" placeholder="wprowadź imię" value=""></td>
                 </tr>
                 <tr>
                     <td><p for="nazwisko">Nazwisko</p></td>
-                    <td><input type="text" id="nazwisko" placeholder="wprowadź nazwisko" value=""></td>
+                    <td><input type="text" name="nazwisko" id="nazwisko" placeholder="wprowadź nazwisko" value=""></td>
                 </tr>
                 <tr>
                     <td><p for="email">E-mail</p></td>
-                    <td><input type="email" id="email" placeholder="wprowdź e-mail" value=""></td>
+                    <td><input type="text" name="email" id="email" placeholder="wprowdź e-mail" value=""></td>
                 </tr>
                 <tr>
                     <td>Zgłoszenie</td>
                     <td>
-                        <select id="usługa1">
+                        <select name="usluga" id="usługa1">
                             <option value="Naprawa komputerów">Naprawa komputerów</option>
                             <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
                             <option value="Wirusy">Wirusy</option>
@@ -50,14 +50,15 @@
                     <td></td>
                     <td>
                         <label>Wyślij kopię wiadomości</label>
-                        <input type="checkbox" checked>
+                        <input name="wyslij_kopie" type="checkbox" value="1" checked>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <input type="reset" value="Czyść">
-                        <input type="button" id="btn" value="Wyślij">
+                        <!-- <input type="button" id="btn" value="Wyślij"> -->
+                         <input type="submit" value="Wyślij">
                     </td>
                 </tr>
             </table>
